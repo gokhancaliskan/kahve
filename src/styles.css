@@ -50,6 +50,14 @@
 	color: #eb008b;
 }
 
+.kd {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: transparent;
+}
+
 @media screen and (min-width: 600px) {
 	.ProductsItems {
 		width: 20vw;

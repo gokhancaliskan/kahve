@@ -1,5 +1,6 @@
+import KD from "/KD.png";
 const Footer = () => {
-	return <div>designed by Gokhan Caliskan.</div>;
+	return <div>GOKHAN CALISKAN</div>;
 };
 
 export default Footer;
