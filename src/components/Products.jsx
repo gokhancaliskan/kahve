@@ -26,51 +26,65 @@ const Products = () => {
 		setSelectedName(name);
 	};
 
+	const handleBackClick = () => {
+		setSelectedCategory(null);
+		setSelectedName(null);
+	};
+
 	return (
-		<div className="container">
-			{selectedCategory === null && (
-				<div className="categories">
-					{ProductsItems.map((category) => (
-						<div
-							key={category.id}
-							className="ProductsItems"
-							onClick={() => setSelectedCategory(category.kategori)}
-						>
-							{category.kategori}
-						</div>
-					))}
+		<div className="home">
+			{selectedCategory !== null && (
+				<div className="cursor" onClick={() => handleBackClick()}>
+					<svg viewBox="0 0 24 24">
+						<path d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12 18 7.41z" />
+					</svg>
 				</div>
 			)}
-
-			{selectedCategory !== null && selectedName === null && (
-				<div className="names">
-					{ProductsItems.find(
-						(category) => category.kategori === selectedCategory
-					).list.map((nameObj) => (
-						<div
-							key={nameObj.name}
-							className="ProductsItems"
-							onClick={() => handleNameClick(nameObj.name)}
-						>
-							{nameObj.name}
-						</div>
-					))}
-				</div>
-			)}
-
-			{selectedName !== null && (
-				<div className="items">
-					{ProductsItems.find(
-						(category) => category.kategori === selectedCategory
-					)
-						.list.find((nameObj) => nameObj.name === selectedName)
-						.items.map((item) => (
-							<div key={item} className="item">
-								{item}
+			<div className="container">
+				{selectedCategory === null && (
+					<div className="categories">
+						{ProductsItems.map((category) => (
+							<div
+								key={category.id}
+								className="ProductsItems"
+								onClick={() => setSelectedCategory(category.kategori)}
+							>
+								{category.kategori}
 							</div>
 						))}
-				</div>
-			)}
+					</div>
+				)}
+
+				{selectedCategory !== null && selectedName === null && (
+					<div className="names">
+						{ProductsItems.find(
+							(category) => category.kategori === selectedCategory
+						).list.map((nameObj) => (
+							<div
+								key={nameObj.name}
+								className="ProductsItems"
+								onClick={() => handleNameClick(nameObj.name)}
+							>
+								{nameObj.name}
+							</div>
+						))}
+					</div>
+				)}
+
+				{selectedName !== null && (
+					<div className="items">
+						{ProductsItems.find(
+							(category) => category.kategori === selectedCategory
+						)
+							.list.find((nameObj) => nameObj.name === selectedName)
+							.items.map((item) => (
+								<div key={item} className="item">
+									{item}
+								</div>
+							))}
+					</div>
+				)}
+			</div>
 		</div>
 	);
 };
