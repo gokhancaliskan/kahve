@@ -34,6 +34,11 @@
 	flex-wrap: wrap;
 	justify-content: center;
 }
+.names {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 .ProductsItems {
 	background-color: #eb008b;
 	color: #2e3138;
