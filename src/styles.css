@@ -22,21 +22,26 @@
 .cardarea {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
 }
+
 .container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
-
+.categories {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 .ProductsItems {
 	background-color: #eb008b;
 	color: #2e3138;
+
 	font-size: 6vw;
 	width: 45vw;
 	height: 45vw;
-	margin: 1vw;
+	margin: 2vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
