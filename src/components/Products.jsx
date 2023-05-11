@@ -1,22 +1,7 @@
-// import { Link } from "react-router-dom";
-// import ProductsItems from "./ProductsItems";
-
-// const Products = () => {
-// 	return (
-// 		<div className="container">
-// 			{ProductsItems.map((item) => (
-// 				<div className="ProductsItems" key={item.id} onClick={() => handleClick(item.kategori)}>
-// 					{item.kategori}
-// 				</div>
-// 			))}
-// 		</div>
-// 	);
-// };
-
-// export default Products;
-
 import ProductsItems from "./ProductsItems";
 import { useState } from "react";
+import "../assets/index";
+import fondu from "../assets/index";
 
 const Products = () => {
 	const [selectedCategory, setSelectedCategory] = useState(null);
@@ -84,7 +69,7 @@ const Products = () => {
 							.items.map((item, index) => (
 								<div key={index} className="item">
 									<div className="left-column">
-										<img src="./kahvederyasi.jpg" alt="ürün resmi" />
+										<img src={fondu} alt="ürün resmi" />
 									</div>
 									<div className="right-column">
 										<div className="product-name">{item.ürünadi}</div>

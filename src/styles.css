@@ -95,9 +95,9 @@
 }
 
 .left-column {
-	width: 30%;
+	width: 100px;
+	height: 100px;
 	display: flex;
-	flex-direction: column;
 }
 
 .right-column {
@@ -116,10 +116,7 @@
 	margin-top: auto;
 	padding-right: 1vw;
 }
-img {
-	width: 100%;
-	height: 100%;
-}
+
 @media screen and (min-width: 600px) {
 	.ProductsItems {
 		width: 20vw;
