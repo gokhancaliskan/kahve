@@ -84,10 +84,7 @@ const Products = () => {
 							.items.map((item) => (
 								<div key={item} className="item">
 									<div className="left-column">
-										<img
-											src="https://i.nefisyemektarifleri.com/2022/05/24/yoresel-yemek-elibogrunde-yanyana-6.jpg"
-											alt="ürün resmi"
-										/>
+										<img src="./kahvederyasi.jpg" alt="ürün resmi" />
 									</div>
 									<div className="right-column">
 										<div className="product-name">{item}</div>
