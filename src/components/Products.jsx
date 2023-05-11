@@ -27,8 +27,12 @@ const Products = () => {
 	};
 
 	const handleBackClick = () => {
-		setSelectedCategory(null);
-		setSelectedName(null);
+		if (selectedName !== null) {
+			setSelectedName(null);
+			return;
+		} else if (selectedCategory !== null) {
+			setSelectedCategory(null);
+		}
 	};
 
 	return (
@@ -79,7 +83,17 @@ const Products = () => {
 							.list.find((nameObj) => nameObj.name === selectedName)
 							.items.map((item) => (
 								<div key={item} className="item">
-									{item}
+									<div className="left-column">
+										<img
+											src="https://i.nefisyemektarifleri.com/2022/05/24/yoresel-yemek-elibogrunde-yanyana-6.jpg"
+											alt="ürün resmi"
+										/>
+									</div>
+									<div className="right-column">
+										<div className="product-name">{item}</div>
+										<div className="product-content">İçerik</div>
+										<div className="price">10 TL</div>
+									</div>
 								</div>
 							))}
 					</div>

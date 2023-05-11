@@ -12,7 +12,11 @@ const ProductsItems = [
 				items: ["Tavuk Şiş", "Tavuklu Pilav", "Tavuklu Makarna"],
 			},
 			{
-				name: "ÇİKOLATA VE SALEP",
+				name: "SICAK ÇİKOLATA",
+				items: ["Tavuk Şiş", "Tavuklu Pilav", "Tavuklu Makarna"],
+			},
+			{
+				name: "SALEP",
 				items: ["Tavuk Şiş", "Tavuklu Pilav", "Tavuklu Makarna"],
 			},
 		],
@@ -34,6 +38,10 @@ const ProductsItems = [
 				items: ["Tavuk Şiş", "Tavuklu Pilav", "Tavuklu Makarna"],
 			},
 			{
+				name: "FROZEN",
+				items: ["Tavuk Şiş", "Tavuklu Pilav", "Tavuklu Makarna"],
+			},
+			{
 				name: "MEŞRUBATLAR",
 				items: ["Tavuk Şiş", "Tavuklu Pilav", "Tavuklu Makarna"],
 			},
@@ -49,6 +57,14 @@ const ProductsItems = [
 			},
 			{
 				name: "ET YEMEKLERİ",
+				items: ["Tavuk Şiş", "Tavuklu Pilav", "Tavuklu Makarna"],
+			},
+			{
+				name: "APERATİFLER",
+				items: ["Tavuk Şiş", "Tavuklu Pilav", "Tavuklu Makarna"],
+			},
+			{
+				name: "MAKARNALAR",
 				items: ["Tavuk Şiş", "Tavuklu Pilav", "Tavuklu Makarna"],
 			},
 			{
@@ -74,11 +90,19 @@ const ProductsItems = [
 		kategori: "TATLILAR",
 		list: [
 			{
-				name: "WAFFLE & SUFLE",
+				name: "SUFLE",
 				items: ["Tavuk Şiş", "Tavuklu Pilav", "Tavuklu Makarna"],
 			},
 			{
-				name: "PASTA",
+				name: "PASTALAR",
+				items: ["Tavuk Şiş", "Tavuklu Pilav", "Tavuklu Makarna"],
+			},
+			{
+				name: "WAFFLE",
+				items: ["Tavuk Şiş", "Tavuklu Pilav", "Tavuklu Makarna"],
+			},
+			{
+				name: "FONDÜ",
 				items: ["Tavuk Şiş", "Tavuklu Pilav", "Tavuklu Makarna"],
 			},
 		],
