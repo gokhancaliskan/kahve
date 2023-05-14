@@ -1,7 +1,5 @@
 import ProductsItems from "./ProductsItems";
 import { useState } from "react";
-import "../assets/index";
-import fondu from "../assets/index";
 
 const Products = () => {
 	const [selectedCategory, setSelectedCategory] = useState(null);
@@ -66,10 +64,10 @@ const Products = () => {
 							(category) => category.kategori === selectedCategory
 						)
 							.list.find((nameObj) => nameObj.name === selectedName)
-							.items.map((item, index) => (
+							.ürünler.map((item, index) => (
 								<div key={index} className="item">
 									<div className="left-column">
-										<img src={fondu} alt="ürün resmi" />
+										<img src={item.resim} alt="ürün resmi" />
 									</div>
 									<div className="right-column">
 										<div className="product-name">{item.ürünadi}</div>
