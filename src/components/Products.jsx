@@ -17,7 +17,7 @@ const Products = () => {
 			setSelectedCategory(null);
 		}
 	};
-
+	
 	return (
 		<div className="home">
 			{selectedCategory !== null && (
@@ -28,7 +28,8 @@ const Products = () => {
 				</div>
 			)}
 			<div className="container">
-				{selectedCategory === null && (
+				
+				{selectedCategory === null && (					
 					<div className="categories">
 						{ProductsItems.map((category) => (
 							<div
@@ -39,10 +40,12 @@ const Products = () => {
 								{category.kategori}
 							</div>
 						))}
-					</div>
+					</div>				
 				)}
 
 				{selectedCategory !== null && selectedName === null && (
+					<div>
+						<div className="titlename">{selectedCategory}</div>
 					<div className="names">
 						{ProductsItems.find(
 							(category) => category.kategori === selectedCategory
@@ -56,9 +59,13 @@ const Products = () => {
 							</div>
 						))}
 					</div>
+					</div>
 				)}
 
 				{selectedName !== null && (
+					<div>
+						<div className="titlecategory">{selectedName}</div>
+						
 					<div className="items">
 						{ProductsItems.find(
 							(category) => category.kategori === selectedCategory
@@ -76,7 +83,7 @@ const Products = () => {
 									</div>
 								</div>
 							))}
-					</div>
+					</div></div>
 				)}
 			</div>
 		</div>

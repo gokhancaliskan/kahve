@@ -34,6 +34,26 @@
 	flex-wrap: wrap;
 	justify-content: center;
 }
+.titlecategory{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: 25px;
+	font-size: 1.6rem;
+	color: #eb008b;
+}
+.titlename{
+	display: flex;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: 25px;
+	font-size: 1.6rem;
+	
+}
+
 .names {
 	display: flex;
 	flex-wrap: wrap;
