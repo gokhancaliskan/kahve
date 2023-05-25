@@ -1,6 +1,7 @@
 import ProductsItems from "./ProductsItems";
 import { useState } from "react";
 
+
 const Products = () => {
 	const [selectedCategory, setSelectedCategory] = useState(null);
 	const [selectedName, setSelectedName] = useState(null);
